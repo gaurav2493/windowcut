@@ -1,0 +1,7 @@
+<html>
+<body>
+<% 
+out.println("Welcome " + request.getparameter(tf1));
+%>
+</body>
+</html>

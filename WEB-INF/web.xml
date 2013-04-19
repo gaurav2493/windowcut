@@ -1,0 +1,10 @@
+<web-app>
+<servlet>
+      <servlet-name>Prog</servlet-name>
+      <servlet-class>Prog</servlet-class>
+    </servlet>
+<servlet-mapping>
+        <servlet-name>Prog</servlet-name>
+        <url-pattern>/prog</url-pattern>
+    </servlet-mapping>
+</web-app>

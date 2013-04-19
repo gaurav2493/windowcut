@@ -1,0 +1,14 @@
+<%
+String u=request.getParameter("tf1");
+String p=request.getParameter("tf2");
+if(u.equals("scott") && p.equals("tiger")){
+%>
+  <jsp:forward page="welcome.jsp" />
+<%
+}
+else{
+%>
+<jsp:forward page="error.jsp" />
+<%
+}
+%>

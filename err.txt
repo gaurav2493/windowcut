@@ -1,0 +1,431 @@
+Prog.java:23: error: cannot find symbol
+    wast_array=this.store.toArray();
+                   ^
+  symbol: variable store
+Prog.java:24: error: cannot find symbol
+    if(Integer.parseInt(wast_array[wast_array.length-1].toString())>=this.waste_size)
+                                                                         ^
+  symbol: variable waste_size
+Prog.java:28: error: cannot find symbol
+        out.println((this.counter+i-wast_array.length+1)+"\t"+wast_array[i]);
+                         ^
+  symbol: variable counter
+Prog.java:31: error: cannot find symbol
+    out.println("No of pieces req = "+this.counter);    
+                                          ^
+  symbol: variable counter
+Prog.java:32: error: cannot find symbol
+    out.println("Waste = "+this.waste);
+                               ^
+  symbol: variable waste
+Prog.java:38: error: cannot find symbol
+    max=Integer.parseInt((String)request.getParameter("proc"));
+    ^
+  symbol:   variable max
+  location: class Prog
+Prog.java:40: error: cannot find symbol
+    waste_size=Integer.parseInt((String)request.getParameter("waste")); 
+    ^
+  symbol:   variable waste_size
+  location: class Prog
+Prog.java:42: error: cannot find symbol
+    total=Integer.parseInt((String)request.getParameter("no"));
+    ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:43: error: cannot find symbol
+    block=new int[total];
+    ^
+  symbol:   variable block
+  location: class Prog
+Prog.java:43: error: cannot find symbol
+    block=new int[total];
+                  ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:44: error: cannot find symbol
+    qty=new int[total];
+    ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:44: error: cannot find symbol
+    qty=new int[total];
+                ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:45: error: cannot find symbol
+    for(int i=0;i<total;i++)
+                  ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:48: error: cannot find symbol
+      block[i]=Integer.parseInt((String)request.getParameter("tf1"+i));
+      ^
+  symbol:   variable block
+  location: class Prog
+Prog.java:50: error: cannot find symbol
+      qty[i]=Integer.parseInt((String)request.getParameter("tf2"+i));
+      ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:56: error: cannot find symbol
+    for(int i=0;i<total;i++)
+                  ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:57: error: cannot find symbol
+      out.println((i+1)+"\t"+block[i]+"\t"+qty[i]);
+                             ^
+  symbol:   variable block
+  location: class Prog
+Prog.java:57: error: cannot find symbol
+      out.println((i+1)+"\t"+block[i]+"\t"+qty[i]);
+                                           ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:62: error: cannot find symbol
+    for(int i=0;i<total;i++)
+                  ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:64: error: cannot find symbol
+      for(int j=0;j<total-1;j++)
+                    ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:66: error: cannot find symbol
+        if(block[i]>block[j])
+           ^
+  symbol:   variable block
+  location: class Prog
+Prog.java:66: error: cannot find symbol
+        if(block[i]>block[j])
+                    ^
+  symbol:   variable block
+  location: class Prog
+Prog.java:68: error: cannot find symbol
+          tmp=block[i];
+              ^
+  symbol:   variable block
+  location: class Prog
+Prog.java:69: error: cannot find symbol
+          block[i]=block[j];
+          ^
+  symbol:   variable block
+  location: class Prog
+Prog.java:69: error: cannot find symbol
+          block[i]=block[j];
+                   ^
+  symbol:   variable block
+  location: class Prog
+Prog.java:70: error: cannot find symbol
+          block[j]=tmp;
+          ^
+  symbol:   variable block
+  location: class Prog
+Prog.java:72: error: cannot find symbol
+          tmp=qty[i];
+              ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:73: error: cannot find symbol
+          qty[i]=qty[j];
+          ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:73: error: cannot find symbol
+          qty[i]=qty[j];
+                 ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:74: error: cannot find symbol
+          qty[j]=tmp;
+          ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:83: error: cannot find symbol
+    comb=new int[total];
+    ^
+  symbol:   variable comb
+  location: class Prog
+Prog.java:83: error: cannot find symbol
+    comb=new int[total];
+                 ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:94: error: cannot find symbol
+      for(int i=0;i<total;i++)
+                    ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:96: error: cannot find symbol
+        sum+=block[i]*comb[i];
+             ^
+  symbol:   variable block
+  location: class Prog
+Prog.java:96: error: cannot find symbol
+        sum+=block[i]*comb[i];
+                      ^
+  symbol:   variable comb
+  location: class Prog
+Prog.java:97: error: cannot find symbol
+        if(sum>max)
+               ^
+  symbol:   variable max
+  location: class Prog
+Prog.java:108: error: cannot find symbol
+        if(sum==max) // if best comb found
+                ^
+  symbol:   variable max
+  location: class Prog
+Prog.java:112: error: cannot find symbol
+          for(int i=0;i<total;i++)  //  deduct samples from stock(qty) which are already printed
+                        ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:113: error: cannot find symbol
+            qty[i]=qty[i]-comb[i];
+            ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:113: error: cannot find symbol
+            qty[i]=qty[i]-comb[i];
+                   ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:113: error: cannot find symbol
+            qty[i]=qty[i]-comb[i];
+                          ^
+  symbol:   variable comb
+  location: class Prog
+Prog.java:114: error: cannot find symbol
+          for(int i=0;i<total;i++) // reset comb[]
+                        ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:115: error: cannot find symbol
+            comb[i]=0;
+            ^
+  symbol:   variable comb
+  location: class Prog
+Prog.java:123: error: cannot find symbol
+            tempcomb =new int[total];
+            ^
+  symbol:   variable tempcomb
+  location: class Prog
+Prog.java:123: error: cannot find symbol
+            tempcomb =new int[total];
+                              ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:124: error: cannot find symbol
+            for(int i=0;i<total;i++) // storing best comb in tempComb[]
+                          ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:125: error: cannot find symbol
+              tempcomb[i]=comb[i];
+              ^
+  symbol:   variable tempcomb
+  location: class Prog
+Prog.java:125: error: cannot find symbol
+              tempcomb[i]=comb[i];
+                          ^
+  symbol:   variable comb
+  location: class Prog
+Prog.java:129: error: cannot find symbol
+      for(int i=0;i<total;i++)  //to check whether all comb done
+                    ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:131: error: cannot find symbol
+        if(comb[i]!=qty[i])
+           ^
+  symbol:   variable comb
+  location: class Prog
+Prog.java:131: error: cannot find symbol
+        if(comb[i]!=qty[i])
+                    ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:145: error: cannot find symbol
+        out.println("\t\t\tThis piece remains = "+(max-best));
+                                                   ^
+  symbol:   variable max
+  location: class Prog
+Prog.java:146: error: cannot find symbol
+        if((max-best)<waste_size)
+            ^
+  symbol:   variable max
+  location: class Prog
+Prog.java:146: error: cannot find symbol
+        if((max-best)<waste_size)
+                      ^
+  symbol:   variable waste_size
+  location: class Prog
+Prog.java:147: error: cannot find symbol
+          waste+=max-best;
+          ^
+  symbol:   variable waste
+  location: class Prog
+Prog.java:147: error: cannot find symbol
+          waste+=max-best;
+                 ^
+  symbol:   variable max
+  location: class Prog
+Prog.java:149: error: cannot find symbol
+          store.add(max-best);
+                    ^
+  symbol:   variable max
+  location: class Prog
+Prog.java:149: error: cannot find symbol
+          store.add(max-best);
+          ^
+  symbol:   variable store
+  location: class Prog
+Prog.java:150: error: cannot find symbol
+        for(int i=0;i<total;i++)
+                      ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:151: error: cannot find symbol
+          qty[i]=qty[i]-tempcomb[i];
+          ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:151: error: cannot find symbol
+          qty[i]=qty[i]-tempcomb[i];
+                 ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:151: error: cannot find symbol
+          qty[i]=qty[i]-tempcomb[i];
+                        ^
+  symbol:   variable tempcomb
+  location: class Prog
+Prog.java:152: error: cannot find symbol
+        for(int i=0;i<total;i++)
+                      ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:153: error: cannot find symbol
+          comb[i]=0;
+          ^
+  symbol:   variable comb
+  location: class Prog
+Prog.java:156: error: cannot find symbol
+      for(int i=0;i<total;i++) // To end while loop when no more pieces left
+                    ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:158: error: cannot find symbol
+        if(qty[i]==0 && i!=total-1)
+           ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:158: error: cannot find symbol
+        if(qty[i]==0 && i!=total-1)
+                           ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:160: error: cannot find symbol
+        else if(i==total-1 && qty[i]==0)
+                   ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:160: error: cannot find symbol
+        else if(i==total-1 && qty[i]==0)
+                              ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:171: error: cannot find symbol
+    counter++;
+    ^
+  symbol:   variable counter
+  location: class Prog
+Prog.java:172: error: cannot find symbol
+    out.println("=====================================\nPiece no "+counter+"\n----------");
+                                                                   ^
+  symbol:   variable counter
+  location: class Prog
+Prog.java:175: error: cannot find symbol
+      for(int i=0;i<total;i++)
+                    ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:176: error: cannot find symbol
+        if(comb[i]!=0)
+           ^
+  symbol:   variable comb
+  location: class Prog
+Prog.java:177: error: cannot find symbol
+          out.println(block[i]+"  *  "+comb[i]);
+                      ^
+  symbol:   variable block
+  location: class Prog
+Prog.java:177: error: cannot find symbol
+          out.println(block[i]+"  *  "+comb[i]);
+                                       ^
+  symbol:   variable comb
+  location: class Prog
+Prog.java:182: error: cannot find symbol
+      for(int i=0;i<total;i++)
+                    ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:183: error: cannot find symbol
+        if(tempcomb[i]!=0)
+           ^
+  symbol:   variable tempcomb
+  location: class Prog
+Prog.java:184: error: cannot find symbol
+          out.println(block[i]+"  *  "+tempcomb[i]);
+                      ^
+  symbol:   variable block
+  location: class Prog
+Prog.java:184: error: cannot find symbol
+          out.println(block[i]+"  *  "+tempcomb[i]);
+                                       ^
+  symbol:   variable tempcomb
+  location: class Prog
+Prog.java:190: error: cannot find symbol
+      for(int i=total-1;;)
+                ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:192: error: cannot find symbol
+        if(comb[i]!=qty[i])
+           ^
+  symbol:   variable comb
+  location: class Prog
+Prog.java:192: error: cannot find symbol
+        if(comb[i]!=qty[i])
+                    ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:194: error: cannot find symbol
+          comb[i]++;
+          ^
+  symbol:   variable comb
+  location: class Prog
+Prog.java:199: error: cannot find symbol
+          if(i==0 && comb[0]!=qty[0])
+                     ^
+  symbol:   variable comb
+  location: class Prog
+Prog.java:199: error: cannot find symbol
+          if(i==0 && comb[0]!=qty[0])
+                              ^
+  symbol:   variable qty
+  location: class Prog
+Prog.java:200: error: cannot find symbol
+            i=total-1;
+              ^
+  symbol:   variable total
+  location: class Prog
+Prog.java:203: error: cannot find symbol
+            comb[i]=0;
+            ^
+  symbol:   variable comb
+  location: class Prog
+87 errors
